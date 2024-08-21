@@ -43,30 +43,25 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
+
   return (
     <Html lang="en">
       <Head>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-B71N5R0MH5`}
-        />
-        <script
+        {/* Set the default consent state without loading the GA script */}
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
               gtag('consent', 'default', {
                 'ad_storage': 'denied',
-                'analytics_storage': 'denied'
-              });
-              gtag('config', 'G-B71N5R0MH5', {
-                page_path: window.location.pathname,
+                'analytics_storage': 'denied',
+                'functionality_storage': 'denied',
+                'personalization_storage': 'denied',
               });
             `,
           }}
-        />
+        /> */}
       </Head>
       <body>
         <Main />
@@ -75,4 +70,3 @@ export default function Document() {
     </Html>
   )
 }
-

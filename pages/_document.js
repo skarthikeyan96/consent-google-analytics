@@ -63,7 +63,7 @@ export default function Document() {
           }}
           5de3ee48-7d5d-4dee-8845-a8f7adcbf1e1
         /> */}
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5de3ee48-7d5d-4dee-8845-a8f7adcbf1e1" data-blockingmode="auto" type="text/javascript"></script>
+        <script async id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5de3ee48-7d5d-4dee-8845-a8f7adcbf1e1" data-blockingmode="auto" type="text/javascript"></script>
       </Head>
       <body>
         <Main />
